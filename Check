@@ -1,0 +1,62 @@
+#include <iostream>
+using namespace std;
+
+struct Date {
+	unsigned short day;
+	unsigned short month;
+	int year;
+};
+
+struct Time {
+	unsigned short hours;
+	unsigned short minutes;
+};
+
+struct Shop {
+	string name;
+	string adress;
+};
+
+struct Client {
+	string name;
+	long long int phone_number;
+};
+struct Product {
+	string item;
+	short price;
+	short kolichestvo;
+};
+
+int main() {
+	Shop s;
+	s.name = "\t\t'Albatros'";
+	s.adress = "Odesa, Henyezska str., 28";
+	cout << s.name << "\n";
+	cout << s.adress << "\n";
+
+	Date d;
+	d.day = 10;
+	d.month = 3;
+	d.year = 2024;
+	cout << d.day << ".0" << d.month << "." << d.year;
+
+	Time t;
+	t.hours = 20;
+	t.minutes = 16;
+	cout << "\t\t" << t.hours << ":" << t.minutes << "\n\n\n";
+	
+	Client c;
+	c.phone_number = 380936245127;
+	cout << "Client\t\t " << c.phone_number << "\n";
+
+	Product p;
+	p.item = "10.9 - inch iPad Wi‑Fi + Cellular 256GB - Blue";
+	p.kolichestvo = 1;
+	p.price = 749;
+	cout << p.item << "\n\n" << p.kolichestvo << "\t\t\t" << p.price << "$" << "\n\n\n";
+	cout << "Total" << p.price;
+};
+	
+	
+
+
